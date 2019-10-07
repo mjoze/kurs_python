@@ -5,5 +5,3 @@ hours = 4
 learn = 7 * hours
 print('nową umiejetnosc zdobedziesz za' , 75 // learn , 'tygodnie')
 
-weight = 100
-height = 181
