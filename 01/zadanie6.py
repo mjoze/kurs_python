@@ -28,7 +28,7 @@ print(word, 'wystepuje w tekscie:', a.count("better"), 'razy')
 # Usuń z tekstu symbol gwiazdki
 symbol = '*'
 n_a = a.replace('*', '')
-# print(new_a)
+# print(n_a)
 
 # Zamień jedno wystąpienie explain na understand
 print(a.count('explain'))
