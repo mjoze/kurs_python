@@ -2,10 +2,10 @@
 wordReverse = word[::-1]
 print(word == wordReverse)'''
 
-word = 'Kobbyła ma mały bok'
-word = word.lower()
-
-word = word.replace(' ', '')
+word = input('wprowadz wyrazenie aby sprawdzic czy to palindrom')
+word = word.lower().replace(' ', '')
+# print(word)
 wordReverse = word[::-1]
-print(word == wordReverse)
+# print(wordReverse)
+print('to palindrom :', word == wordReverse)
 
