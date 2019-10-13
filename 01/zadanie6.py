@@ -27,18 +27,18 @@ print(word, 'występuje w tekście:', a.count("better"), 'razy')
 
 # Usuń z tekstu symbol gwiazdki
 symbol = '*'
-n_a = a.replace('*', '')
-# print(n_a)
+a_n = a.replace('*', '')
+# print(a_n)
 
 # Zamień jedno wystąpienie explain na understand
 print(a.count('explain'))
-n2_a = a.replace('explain', 'understand', 1)
-print(n2_a.count('explain'))
-# print(n2_a)
+a_n2 = a.replace('explain', 'understand', 1)
+print(a_n2.count('explain'))
+# print(a_n2)
 
 # Usuń spacje i połącz wszystkie słowa myślnikiem
-n3_a = a.replace(' ', '-')
-# print(n3_a)
+a_n3 = a.replace(' ', '-')
+# print(a_n3)
 
 # Podziel tekst na osobne zdania za pomocą kropki
 n4_a = a.replace(' ', '.')
