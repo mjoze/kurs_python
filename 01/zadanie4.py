@@ -9,8 +9,10 @@ t = str(title.isalpha())
 a = str(author.isalpha())
 l = str(length.isnumeric())
 
-check = title + ' składa się z liter:' + t + ' ' + author + ' sklada sie z liter:' + a + ' ' + length + ' jest wartoscia liczbowa:' + ' '+ l
-checkFormat = '{} sklada sie z liter: {}. {} sklada sie z liter: {}. {} jest wartoscia liczbowa: {}'.format(title, t, author, a, length, l)
+check = title + ' składa się z liter:' + t + ' ' + author + ' składa sie z liter:' \
+        + a + ' ' + length + 'jest wartością liczbową:' + ' ' + l
+checkFormat = '{} składa sie z liter: {}. {} składa sie z liter: {}. ' \
+              '{} jest wartością liczbową: {}'.format(title, t, author, a, length, l)
 print(check)
 print(checkFormat)
 

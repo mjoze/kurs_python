@@ -23,7 +23,7 @@ Namespaces are one honking great idea -- let's do more of those!"""
 
 # Policz liczbę wystąpień słowa better.
 word = 'better'
-print(word, 'wystepuje w tekscie:', a.count("better"), 'razy')
+print(word, 'występuje w tekście:', a.count("better"), 'razy')
 
 # Usuń z tekstu symbol gwiazdki
 symbol = '*'
