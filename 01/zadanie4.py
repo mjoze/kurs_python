@@ -5,8 +5,14 @@ length = input("Podaj liczbę stron:")
 
 # 1.
 # Sprawdź czy tytuł i nazwisko składają się tylko z liter, natomiast liczba stron jest wartością liczbową.
-check = title, 'składa się z liter:', title.isalpha(), '\n', author, 'sklada sie z liter:', author.isalpha(), '\n', length, 'jest wartoscia liczbowa', length.isnumeric()
+t = str(title.isalpha())
+a = str(author.isalpha())
+l = str(length.isnumeric())
+
+check = title + ' składa się z liter:' + t + ' ' + author + ' sklada sie z liter:' + a + ' ' + length + ' jest wartoscia liczbowa:' + ' '+ l
+checkFormat = '{} sklada sie z liter: {}. {} sklada sie z liter: {}. {} jest wartoscia liczbowa: {}'.format(title, t, author, a, length, l)
 print(check)
+print(checkFormat)
 
 # 2.
 # Użytkownicy bywają leniwi. Nie zawsze zapisują tytuły i nazwisko z dużej litery – popraw ich
