@@ -1,0 +1,10 @@
+# zamienic string metoda split na tablice, podaj trzy przedmioty i 3 oceny. wyswietl przedmiot i ocene
+
+i = 1
+while i <= 3:
+    subject = input("Podaj przedmiot")
+    # grade = input("Podaj ocenę")
+    print(i)
+    print(subject)
+    i = i + 1
+

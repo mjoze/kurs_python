@@ -41,5 +41,8 @@ a_n3 = a.replace(' ', '-')
 # print(a_n3)
 
 # Podziel tekst na osobne zdania za pomocą kropki
+
+# poprawić używając split
+
 n4_a = a.replace(' ', '.')
 print(n4_a)
