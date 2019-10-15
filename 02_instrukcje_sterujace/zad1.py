@@ -10,4 +10,3 @@ id = 0
 while id < len(names):
     print(names[id])
     id = id + 1
-
