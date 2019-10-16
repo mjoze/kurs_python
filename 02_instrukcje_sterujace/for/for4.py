@@ -6,7 +6,7 @@ silnia = 1
 if a < 8:
     for i in range(1, 1 + a):
         silnia = silnia * i
-        print(silnia, i)
+        # print(silnia, i)
     print('silnia z {} wynosi {}'.format(a, silnia))
 else:
     print('podana liczba jest większa niż 8')
