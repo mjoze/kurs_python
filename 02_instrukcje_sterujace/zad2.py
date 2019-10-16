@@ -9,4 +9,3 @@ txt = "abrakadabra"
 for i in range(1, len(txt), 2):
     print(txt[i], end='')
 
-    

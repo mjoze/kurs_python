@@ -13,7 +13,7 @@ Jeśli po 6 próbach użytkownik nie zgadnie - wygrywa komputer."""
 import random
 from math import fabs
 
-ai_choice = random.randrange(1,100)
+ai_choice = random.randrange(1, 100)
 print(ai_choice)
 shoots = 6
 while shoots > 0:

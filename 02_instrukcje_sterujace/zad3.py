@@ -8,7 +8,7 @@ num = 0
 special = 0
 for i in txt:
     if i.islower() and i.isalpha():
-       l_c += 1
+        l_c += 1
     if i.isupper():
         u_c += 1
     if i.isdigit():
