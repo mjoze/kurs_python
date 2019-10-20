@@ -9,7 +9,10 @@ for _ in range(a):
     else:
         print('musisz podać parzystą liczbę')
         break
-if elements[int(a / 2 - 1)] == elements[int(a / 2)]:
-    print('takie same')
-else:
-    print('różne')
+
+if len(elements) % 2 == 0 and len(elements) > 0:
+    if elements[int(len(elements)/2)] == elements[int(len(elements)/2) - 1]:
+        print('2 środkowe elementy są takie same')
+
+
+
