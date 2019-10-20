@@ -21,3 +21,8 @@ for row in range(len(names)):
         else:
             print(names[row][col], end=' ')
     print()
+print('----------')
+# for i in range(len(names)):
+#     for j in range(len(names[i])):
+#         print(names[i][j], end=" ")
+#     print()
