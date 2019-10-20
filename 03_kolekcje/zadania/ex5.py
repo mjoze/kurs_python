@@ -21,5 +21,6 @@ for i in a:
         dict_txt[i] = 1
 # print(dict_txt)
 # ladnie wyswietlic slownik ??
+print('Ilość wystąpień słów:')
 for i, j in dict_txt.items():
     print("{} : {}".format(i, j))
