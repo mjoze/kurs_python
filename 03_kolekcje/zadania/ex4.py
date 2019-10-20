@@ -16,9 +16,22 @@ for i in range(len(tab)):
         print([tab[i][j]], end='')
     print()
 print('-------------')
+
 for i in range(1, 11):
     for j in range(1, 11):
         print([i * j], end=" ")
     print()
 print('-------------')
 
+tab2 = []
+for i in range(1, 11):
+    tab2_r = []
+    for j in range(1,11):
+        tab2_r.append(i * j)
+    tab2.append(tab2_r)
+print(tab2)
+
+for i in range(len(tab2)):
+    for j in range(len(tab2[i])):
+        print(tab2[i][j], end=' ')
+    print()
