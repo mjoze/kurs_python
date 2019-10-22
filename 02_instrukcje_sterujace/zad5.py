@@ -26,4 +26,5 @@ while shoots > 0:
     else:
         print('zimno')
     shoots -= 1
-print('Przegrana')
+    if shoots == 0:
+        print('Przegrana')
