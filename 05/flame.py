@@ -35,4 +35,3 @@ def count_letter():
 create_names_dict(a)
 create_names_dict(b)
 count_letter()
-
