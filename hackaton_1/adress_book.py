@@ -47,21 +47,22 @@ def exit_program(q):
 
 start_app = True
 while start_app:
-    print("show adress book press A")
-    print("add new contact press B")
-    print('remove contact press R')
-    print("exit program press Q")
+    print("Show adress book press A")
+    print("Add new contact press B")
+    print('Remove contact press R')
+    print("Exit program press Q")
     a = input("").upper()
     if a == 'A':
         view(book)
     if a == 'B':
-        name = input("name:").capitalize()
-        surname = input('surname:').capitalize()
-        mail = input('email:')
+        name = input("Name:").capitalize()
+        surname = input('Surname:').capitalize()
+        mail = input('Email:')
         add_contact(name, surname, mail)
     if a == "R":
-        remove = input("contact to remove. name or surname").capitalize()
+        remove = input("Contact to remove. name or surname").capitalize()
         del_contact(remove)
     if a == "Q":
         exit_program(a)
         start_app = False
+
