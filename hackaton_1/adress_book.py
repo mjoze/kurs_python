@@ -1,11 +1,4 @@
-"""### Książka adresowa:
-Program przechowujący danę kontaktowe znajomych/klientów.
-- Program wyświetla menu wypisujące komendy jakie należy wpisać, aby program wykonał dane zadanie. Zadania to:
-    - Wyświetlenie wszystkich wpisów
-    - Stworzenie nowego wpisu (dane wczytywane z klawiatury)
-    - Usunięcie wpisu
-    - Zakończenie pracy programu
-- Program powinien na starcie mieć już wprowadzone kilka wpisów."""
+
 
 import random
 
