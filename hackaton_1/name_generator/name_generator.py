@@ -1,10 +1,3 @@
-"""### Generator imienia dla Wojownika RPG:
-- Konieczność użycia modułu `random`.
-- Program generuje wymawialne(!) imię o zadanej długości i dodaje do niego przydomek
-(opcjonalnie również tytuł i liczebnik). Np. 'Jouxdrien II Niemrawy'.
-- Pomysł jest zainspirowany grą: http://progressquest.com/play/main.html
-- Imię musi zaczynać się od wielkiej litery.
-- Program można kontynuować używając pomysłu poniżej."""
 
 import random
 
@@ -25,6 +18,7 @@ def generate_name(n):
     return name
 
 
+print("Create new nickname")
 numbers = int(input("enter the number of characters"))
 a = generate_name(numbers)
 print(a)
