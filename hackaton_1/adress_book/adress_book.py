@@ -8,42 +8,42 @@ book = {1: {'name': "Anna", 'surname': 'Kamińska', 'mail': 'anna.kaminska@gmail
 
 
 def view(x):
-    for k, v in book.items():
-        print(v)
+    for key, value in book.items():
+        print(value)
     return book
 
 
-def add_contact(x, y, z):
-    w = random.randrange(1, 1000)
-    book[w] = {'name': x, 'surname': y, 'mail': z}
+def add_contact(name_to_add, surname_to_add, mail_to_add):
+    index_book = random.randrange(1, 1000)
+    book[index_book] = {'name': name_to_add, 'surname': surname_to_add, 'mail': mail_to_add}
     return book
 
 
 def del_contact(txt):
-    n = 0
-    for k, v in book.items():
-        for i in v.values():
+    num_to_del = 0
+    for key, value in book.items():
+        for i in value.values():
             if i == txt:
-                n = k
-    if n == 0:
+                num_to_del = key
+    if num_to_del == 0:
         print('Error. Name not in adress book')
     else:
-        book.pop(n)
+        book.pop(num_to_del)
     return book
 
 
-def exit_program(q):
-    if q == 'Q':
-        print("koniec")
+def exit_program(ex):
+    if ex == 'Q':
+        print("Program is closed")
     return
 
 
 start_app = True
 while start_app:
-    print("Show adress book press A")
-    print("Add new contact press B")
-    print('Remove contact press R')
-    print("Exit program press Q")
+    print('||', "Show adress book", '||', "---- press A")
+    print('||', "Add new contact ", '||', "---- press B")
+    print('||', "Remove contact  ", '||', "---- press R")
+    print('||', "Exit program   ", ' ||', "---- press Q")
     a = input("").upper()
     if a == 'A':
         view(book)

@@ -10,21 +10,21 @@ import random
 
 a = ['q', 'w', 'r', 't', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
 b = ['e', 'y', 'o', 'i', 'a', 'u']
-c = []
-nickname = ['Niski', 'Wielki', "Waleczny", "Kulawy", "Okrągły", "Czeski"]
+new_nick = []
+nickname = ['Niski', 'Wielki', "Waleczny", "Kulawy", "Okrągły", "Czeski", "Brudny", "Cichy"]
 
 
 def generate_name(n):
     for i in range(n):
         if i % 2 == 0:
-            c.append(random.choice(a))
+            new_nick.append(random.choice(a))
         else:
-            c.append(random.choice(b))
+            new_nick.append(random.choice(b))
     nick = random.choice(nickname)
-    name =''.join(c).capitalize() + " " + nick
+    name =''.join(new_nick).capitalize() + " " + nick
     return name
 
 
-i = int(input("enter the number of characters"))
-a = generate_name(8)
+numbers = int(input("enter the number of characters"))
+a = generate_name(numbers)
 print(a)
