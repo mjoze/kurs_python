@@ -5,18 +5,11 @@ var = ‘banannnnannnnnnnnnanananananaaaana’
 
 Wyjście
 ‘nnnnnnnnn’, 9"""
+import longest_sequence as ls
 
-var = "banannnnannnnnnnnnanananananaaaana"
 
-max_count = 1
-count = 1
+if __name__ == "__main__":
+    b = 'banannnnannnnnnnnnanananananaaaana'
+    x = ls.longest_sequence(b)
+    print(x)
 
-for i in range(len(var)-1):
-    if var[i] == var[i+1]:
-        count += 1
-    else:
-        count = 1
-    if count > max_count:
-        max_count = count
-
-print(max_count)
