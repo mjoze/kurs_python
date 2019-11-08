@@ -7,16 +7,31 @@ sportów outdoorowych / pogoda nie sprzyja... .
 
 
 def opt():
-    optimal_temp = input("podaj").split('-')
-    if len(optimal_temp) == 2:
-        if optimal_temp[1] == '':
-            print('nie podałeś pełnego zakresu liczymy od 0')
-            optimal_temp[1] = '0'
-        return optimal_temp
-    else:
-        opt()
+    while True:
+        optimal_temp = input("Podaj zakres temperatur odpowiedni dla uprawiania sportu").split('-')
+        if len(optimal_temp) == 2:
+            if optimal_temp[1] == '':
+                print('nie podałeś pełnego zakresu liczymy do 100')
+                optimal_temp[1] = '100'
+            return optimal_temp
+        else:
+            continue
+
+
+def act_temp(actual_temp):
+    for i in range(int(a[0]), int(a[1])+1):
+        if i == actual_temp:
+            return True
+    return False
+
 
 
 a = opt()
+try:
+    temp = int(input("Podaj aktualną temp."))
+except ValueError:
+    print("Błędna wartość")
+    temp = 0
 
-print(a)
+
+print("Pogoda idealna") if act_temp(temp) else print("pogoda nie sprzyja")
