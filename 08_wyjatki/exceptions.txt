@@ -1,6 +1,2 @@
-bladcould not convert string to float: 'sukaq'
-could not convert string to float: 
-could not convert string to float: '2d'
-could not convert string to float: '22d'
-could not convert string to float: 'a'
-could not convert string to float: 's...'
+bladcould not convert string to float: 'sac'
+division by zero

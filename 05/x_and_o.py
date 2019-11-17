@@ -12,17 +12,19 @@ x_win = []
 o_win = []
 
 
-def choice_x(x):
+def choice_x(x, user_sign, ai_sign):
+    user_sign = user_sign
+    ai_sign = ai_sign
     if x not in game.keys():
         print('Podałeś złą wartość')
         return
     elif x not in xo_list:
-        game[x] = "X"
+        game[x] = user_sign
         xo_list.append(x)
         x_win.append(x)
         ai_choice.remove(x)
         o = random.choice(ai_choice)
-        game[o] = "O"
+        game[o] = ai_sign
         xo_list.append(o)
         o_win.append(o)
         ai_choice.remove(o)
@@ -39,16 +41,16 @@ def print_game():
 
 
 print_game()
-
-
+user = input('user sign')
+ai = input("AI sign")
 while True:
-    a = input('podaj pozycje x').upper()
-    choice_x(a)
+    a = input('podaj pozycje {}'.format(user)).upper()
+    choice_x(a, user, ai)
     if x_win in game_wins:
-        print('x win')
+        print('{} win'.format(user))
         break
     elif o_win in game_wins:
-        print('o win')
+        print('{} win'.format(ai))
         break
     print_game()
 

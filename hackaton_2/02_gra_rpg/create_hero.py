@@ -1,4 +1,3 @@
-
 import random
 import name_generator as ig
 

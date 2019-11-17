@@ -30,4 +30,5 @@ def game():
             break
     print(ask)
 
+
 game()

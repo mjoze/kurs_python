@@ -77,6 +77,8 @@ def game_mode1(user_talia, computer_talia):
     return print("Wygrana użytkownika") if user_counter > computer_counter else print("Wygrana komputera")
 
 
+
+
 user_talia1 = losowanie_kart(10)
 computer_talia1 = losowanie_kart(10)
 game_mode1(user_talia1, computer_talia1)
