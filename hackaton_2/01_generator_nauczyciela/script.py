@@ -1,19 +1,5 @@
-import csv
+import create_data as cd
 import random
-
-
-def open_csv_file(file):
-    with open(file + '.csv', 'r') as f:
-        reader = csv.reader(f)
-        students = list(reader)
-    return students
-
-
-def create_students_dict(lista):
-    students = {}
-    for element in lista:
-        students[element[0] + element[1] + element[2]] = [element[1], element[2], element[3], element[4]]
-    return students
 
 
 def view_class(students):
@@ -50,7 +36,7 @@ def search_task(task, students):
 
 def prepare_group_mail(your_choice):
     if your_choice == 's':
-        new_name = input("Give me the name you're looking for:")
+        new_name = input("Give me the name you're looking for:").capitalize()
         if new_name == '':
             print("Error")
         generate_searching = search_name(new_name, students_list)
@@ -93,18 +79,21 @@ def select_message(message):
 
 
 if __name__ == "__main__":
+    print("Only the default message is available. You can add other messages. ")
+    # txt = input("Enter the name of the file with the message")
     message_new = 'message.txt'
     selected_message = select_message(message_new)
     files = ['3a', '3b']
-    print("Available classes:")
+    print("****Message generator for the selected group****")
+    print("Available classes:".center(50))
     for classes in files:
-        print(classes)
+        print('***', classes, '***')
     try:
-        file1 = input("Select file")
-        open_class_file = open_csv_file(file1)
-        students_list = create_students_dict(open_class_file)
+        file1 = input("Select class:".center(50))
+        open_class_file = cd.open_csv_file(file1)
+        students_list = cd.create_students_dict(open_class_file)
         view_class(students_list)
-        print("Look for: student -- S, grades -- O, or tasks -- Z")
+        print("Look for: student -- press -- |S|, grades -- press -- |O|, or tasks -- press -- |Z|")
         your_choice_ = input("").lower()
         try:
             generate_new_search = prepare_group_mail(your_choice_)
