@@ -32,11 +32,11 @@ def kto_wygra(user_card, computer_card):
             user_card = value[0]
             computer_card = value[0]
         if user_card > computer_card:
-            return True
+            return user_card
         if user_card == computer_card:
-            return print("remis")
-        else:
             return False
+        else:
+            return computer_card
 
 
 def wybor_karty_user(user):
@@ -52,6 +52,7 @@ def wybor_karty_computer(computer):
     return karta_computer
 
 
+
 def game_mode1(user_talia, computer_talia):
     user_counter = 0
     computer_counter = 0
@@ -61,9 +62,9 @@ def game_mode1(user_talia, computer_talia):
         try:
             b = wybor_karty_user(user_talia).upper()
             c = kto_wygra(a, b)
-            if c is True:
+            if c is a:
                 computer_counter += 1
-            if c is False:
+            if c is b:
                 user_counter += 1
             else:
                 pass
@@ -77,8 +78,34 @@ def game_mode1(user_talia, computer_talia):
     return print("Wygrana użytkownika") if user_counter > computer_counter else print("Wygrana komputera")
 
 
+def game_mode2(user_talia, computer_talia):
+    user_counter = 0
+    computer_counter = 0
+    while len(user_talia) > 0:
+        x = user_talia
+        y = computer_talia
+        a = wybor_karty_computer(y)
+        b = wybor_karty_user(x).upper()
+        c = kto_wygra(a, b)
+        if c is a:
+            computer_counter += 1
+            print(a, b)
+            y.remove(a)
+            x.append(a)
+        if c is b:
+            user_counter += 1
+            print(a, b)
+            x.remove(b)
+            y.append(b)
+        if c is False:
+            x.remove(b)
+            y.remove(a)
+
+        print("wygrane usera", user_counter)
+        print("wygrane computera", computer_counter)
+    return print("Wygrana użytkownika") if user_counter > computer_counter else print("Wygrana komputera")
 
 
 user_talia1 = losowanie_kart(10)
 computer_talia1 = losowanie_kart(10)
-game_mode1(user_talia1, computer_talia1)
+game_mode2(user_talia1, computer_talia1)
