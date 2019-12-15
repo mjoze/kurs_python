@@ -14,4 +14,11 @@ Error checking for text strings or other invalid inputs is not required, only va
 
 
 def narcissistic(value):
-    pass
+    num = 0
+    for i in str(value):
+        num += int(i) ** len(str(value))
+    return True if num == value else False
+
+
+a = narcissistic(6)
+print(a)
