@@ -8,5 +8,12 @@ pig_it('Hello world !')     # elloHay orldway !"""
 def pig_it(text):
     word = []
     for i in text.split():
-        word.append(i[1:len(i)] + i[0] + 'ay')
+        if i.isalpha():
+            word.append(i[1:len(i)] + i[0] + 'ay')
+        else:
+            word.append(i)
     return ' '.join(word)
+
+
+a = pig_it('Pig latin is cool ?')
+print(a)
