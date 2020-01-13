@@ -13,7 +13,3 @@ def pig_it(text):
         else:
             word.append(i)
     return ' '.join(word)
-
-
-a = pig_it('Pig latin is cool ?')
-print(a)
