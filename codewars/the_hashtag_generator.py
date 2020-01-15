@@ -11,3 +11,17 @@ Examples
 " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
 "    Hello     World   "                  =>  "#HelloWorld"
 ""                                        =>  false"""
+
+
+def generate_hashtag(s):
+    s = s.split()
+    title_list_string = []
+    for i in s:
+        title_list_string.append(i.title())
+    string_hash = '#' + ''.join(title_list_string)
+    if len(string_hash) > 140:
+        return False
+    elif s == '' or string_hash == '#':
+        return False
+    else:
+        return string_hash
