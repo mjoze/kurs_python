@@ -17,3 +17,16 @@ The code would be called like so:
 
 result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
 # result should == "apples, pears\ngrapes\nbananas"""
+
+
+def solution(string,markers):
+    pass
+
+
+markers = ['#', '!']
+string = "apples, pears # and bananas\ngrapes\nbananas !apples"
+x = string.replace(' ','')
+print(x)
+print(string)
+b = string[:string.index('#')]
+print(b)
