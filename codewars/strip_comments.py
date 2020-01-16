@@ -19,14 +19,20 @@ result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", 
 # result should == "apples, pears\ngrapes\nbananas"""
 
 
-def solution(string,markers):
-    pass
+
+def solution(string, markers):
+    new_string = string.split('\n')
+    for i, line in enumerate(new_string):
+        for m in markers:
+            index = line.find(m)
+            if index != -1:
+                line = line[:index]
+        new_string[i] = line.rstrip(' ')
+    return '\n'.join(new_string)
 
 
-markers = ['#', '!']
-string = "apples, pears # and bananas\ngrapes\nbananas !apples"
-x = string.replace(' ','')
-print(x)
-print(string)
-b = string[:string.index('#')]
-print(b)
+"""def solution(string,markers):
+    parts = string.split('\n')
+    for s in markers:
+        parts = [v.split(s)[0].rstrip() for v in parts]
+    return '\n'.join(parts)"""
