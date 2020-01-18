@@ -29,4 +29,4 @@ def digital_root(n):
         return digital_root(sum_digits)
     else:
         return sum_digits
-
+    # return digital_root(sum_digits) if sum_digits > 9 else sum_digits
