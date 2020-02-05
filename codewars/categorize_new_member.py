@@ -20,3 +20,19 @@ stating whether the respective member is to be placed in the senior or open cate
 Example Output
 ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 """
+
+
+def openOrSenior(data):
+    new_data = []
+    for i in data:
+        if i[0] >= 55 and i[1] > 7:
+            new_data.append('Senior')
+        else:
+            new_data.append('Open')
+    return new_data
+
+
+"""
+def openOrSenior(data):
+  return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
+"""
