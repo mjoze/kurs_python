@@ -1,4 +1,5 @@
 # kurs_python
+## Table of contents
 
 # Python projects:
 ## folder: hackaton_1:
@@ -17,3 +18,6 @@
 
 # codewars challenges
 * folder: codewars
+
+## Technologies
+* python3
