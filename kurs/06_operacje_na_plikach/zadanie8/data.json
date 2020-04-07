@@ -1,0 +1,32 @@
+{
+  "noun": [
+    "dziecko",
+    "człowiek",
+    "żółw",
+    "makaron"
+  ],
+  "verb": [
+    "je",
+    "kupuję",
+    "maluje"
+  ],
+  "adjective": [
+    "okrągłe",
+    "ładne",
+    "kolorowe"
+  ],
+  "animals": [
+    "krowa",
+    "słoń",
+    "świnia"
+  ],
+  "fruits": [
+    "orzech",
+    "brzoskwinia"
+  ],
+  "cities": [
+    "Paris",
+    "Warsaw"
+  ]
+}
+

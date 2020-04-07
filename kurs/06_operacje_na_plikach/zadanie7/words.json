@@ -1,0 +1,16 @@
+{
+  "animals": [
+    "krowa",
+    "słoń",
+    "świnia"
+  ],
+  "fruits": [
+    "orzech",
+    "brzoskwinia"
+  ],
+  "cities": [
+    "Paris",
+    "Warsaw"
+  ]
+}
+
