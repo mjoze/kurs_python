@@ -10,6 +10,6 @@ def count(string):
             a[i] += 1
         else:
             a[i] = 1
-    return {}
+    return a
 
 

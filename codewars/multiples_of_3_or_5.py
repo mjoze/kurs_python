@@ -11,4 +11,6 @@ def solution(number):
         if i % 3 == 0 or i % 5 == 0:
             result += i
 
-    return sum(result)
+    return result
+
+

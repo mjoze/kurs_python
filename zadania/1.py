@@ -6,6 +6,7 @@ Naszym zadaniem jest sprawienie by wszystkie zera znalazły się po prawej stron
 Zatem nasza lista będzie wyglądać tak: lista = [1 ,2, 5, 1, 0, 0, 0]
 """
 
+
 def check_list(arr):
     new_arr = []
     new_zero = []
